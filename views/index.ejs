@@ -7,5 +7,9 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <% if (user) { %>
+    	<%= user.displayName %>
+    <% } %>
+    <a href="/auth/linkedin">Login with LinkedIn</a>
   </body>
 </html>
